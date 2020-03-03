@@ -29,7 +29,7 @@ public class StudentServlet extends HttpServlet {
 		StudentService ss=new StudentServiceImpl();
 		List<Students> list=ss.ShowAll();
 		req.setAttribute("list",list);
-		
+		System.out.println("fsadfjsd");
 		req.getRequestDispatcher("index.jsp").forward(req, resp);
 		
 		
